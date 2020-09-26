@@ -85,11 +85,10 @@ public class MainActivity extends AppCompatActivity {
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
- 
-       int id = item.getItemId();
+        Intent infoIntent = new Intent(this, InfoActivity.class);
+        int id = item.getItemId();
 
         if (id == R.id.info) {       
-           Intent infoIntent = new Intent(this, InfoActivity.class);
            startActivity(infoIntent);
             return true;
          }
